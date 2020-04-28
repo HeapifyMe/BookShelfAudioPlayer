@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:clickable="true"
+    android:background="#fff"
+    tools:context=".BookDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <TextView
+          android:id="@+id/txtAuthorTitleName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textSize="24dp"
+          android:fontFamily="cursive"
+          android:textColor="#3F51B5"
+          android:textStyle="bold"
+          />
+      <TextView
+          android:id="@+id/txtAuthor"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textSize="34dp"
+          android:layout_marginTop="5dp"
+          android:textStyle="bold"
+          />
+
+      <ProgressBar
+          android:id="@+id/simpleProgressBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="invisible"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:layout_centerHorizontal="true"/>
+
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="8dp"
+      android:layout_alignParentBottom="true"
+      >
+
+
+
+<!--      <SeekBar-->
+<!--          android:layout_below="@+id/linearLayout"-->
+<!--          android:id="@+id/seekbar"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:layout_toLeftOf="@+id/txtSongTime"-->
+<!--          android:layout_toRightOf="@+id/txtStartTime" />-->
+
+
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content">-->
+<!--          <ImageView-->
+<!--              android:layout_weight="1"-->
+<!--              android:id="@+id/imgback"-->
+<!--              android:src="@drawable/back"-->
+<!--              android:layout_width="40dp"-->
+<!--              android:layout_height="40dp"/>-->
+<!--          <ImageView-->
+<!--              android:src="@drawable/play"-->
+<!--              android:layout_weight="1"-->
+<!--              android:id="@+id/imgplay"-->
+<!--              android:layout_width="40dp"-->
+<!--              android:layout_height="40dp"/>-->
+<!--          <ImageView-->
+<!--              android:src="@drawable/previous"-->
+<!--              android:layout_weight="1"-->
+<!--              android:id="@+id/imgprevious"-->
+<!--              android:layout_width="40dp"-->
+<!--              android:layout_height="40dp"/>-->
+
+<!--      </LinearLayout>-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+          <ImageView
+              android:layout_margin="5dp"
+              android:background="#AFACAC"
+              android:layout_weight="1"
+              android:id="@+id/imgback"
+              android:src="@drawable/back"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>
+          <ImageView
+              android:layout_margin="5dp"
+              android:background="#AFACAC"
+              android:src="@drawable/play"
+              android:layout_weight="1"
+              android:id="@+id/imgplay"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>
+          <ImageView
+              android:layout_margin="5dp"
+              android:background="#AFACAC"
+              android:src="@drawable/pause"
+              android:layout_weight="1"
+              android:id="@+id/imgStop"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>
+          <ImageView
+              android:layout_margin="5dp"
+              android:background="#AFACAC"
+              android:src="@drawable/pauselay"
+              android:layout_weight="1"
+              android:id="@+id/imgpause"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>
+          <ImageView
+              android:layout_margin="5dp"
+              android:background="#AFACAC"
+              android:src="@drawable/previous"
+              android:layout_weight="1"
+              android:id="@+id/imgprevious"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>
+
+      </LinearLayout>
+
+
+      <SeekBar
+          android:layout_below="@+id/linearLayout"
+          android:id="@+id/seekbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_toLeftOf="@+id/txtSongTime"
+          android:layout_toRightOf="@+id/txtStartTime" />
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_below="@+id/linearLayout"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:layout_below="@+id/linearLayout"
+              android:id="@+id/txtStartTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/sBar"
+              android:text="0 min, 0 sec" />
+
+          <TextView
+             android:gravity="end"
+              android:layout_weight="1"
+              android:layout_below="@+id/linearLayout"
+              android:id="@+id/txtSongTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/sBar"
+              android:text="0 min, 0 sec " />
+      </LinearLayout>
+  </LinearLayout>
+
+<!--  </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_below="@+id/linearLayout"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_below="@+id/linearLayout"-->
+<!--            android:id="@+id/txtStartTime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignTop="@+id/sBar"-->
+<!--            android:text="0 min, 0 sec" />-->
+
+<!--        <TextView-->
+<!--            android:textAlignment="textEnd"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_below="@+id/linearLayout"-->
+<!--            android:id="@+id/txtSongTime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_alignTop="@+id/sBar"-->
+<!--            android:text="0 min, 0 sec " />-->
+<!--    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/image_book"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
